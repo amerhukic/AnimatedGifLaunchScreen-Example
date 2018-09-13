@@ -7,19 +7,29 @@
 //
 
 import UIKit
+import SwiftyGif
 
 class ViewController: UIViewController {
 
+    let logoAnimationView = LogoAnimationView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        view.addSubview(logoAnimationView)
+        logoAnimationView.pinEdgesToSuperView()
+        logoAnimationView.logoGifImageView.delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        logoAnimationView.logoGifImageView.startAnimatingGif()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+extension ViewController: SwiftyGifDelegate {
+    func gifDidStop(sender: UIImageView) {
+        logoAnimationView.isHidden = true
     }
-
-
 }
 

@@ -12,6 +12,9 @@
 		19225FCC214A45BA0055E0CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19225FCA214A45BA0055E0CB /* Main.storyboard */; };
 		19225FCE214A45BD0055E0CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19225FCD214A45BD0055E0CB /* Assets.xcassets */; };
 		19225FD1214A45BD0055E0CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19225FCF214A45BD0055E0CB /* LaunchScreen.storyboard */; };
+		19225FDA214A48B80055E0CB /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 19225FD9214A48B80055E0CB /* logo.gif */; };
+		19225FDC214A69610055E0CB /* LogoAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19225FDB214A69610055E0CB /* LogoAnimationView.swift */; };
+		19DB2254214ADEA100EA1890 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DB2253214ADEA100EA1890 /* UIView+Constraints.swift */; };
 		3B4EDCCF897EB4799FD3B6A0 /* Pods_AnimatedGifLaunchScreen_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FC1799FC38505A484CCB36 /* Pods_AnimatedGifLaunchScreen_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +27,9 @@
 		19225FCD214A45BD0055E0CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19225FD0214A45BD0055E0CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19225FD2214A45BD0055E0CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19225FD9214A48B80055E0CB /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
+		19225FDB214A69610055E0CB /* LogoAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoAnimationView.swift; sourceTree = "<group>"; };
+		19DB2253214ADEA100EA1890 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		A3B017703E0728721A1FEC04 /* Pods-AnimatedGifLaunchScreen-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatedGifLaunchScreen-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimatedGifLaunchScreen-Example/Pods-AnimatedGifLaunchScreen-Example.release.xcconfig"; sourceTree = "<group>"; };
 		B0AF985A42FC9B10231B3BD9 /* Pods-AnimatedGifLaunchScreen-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatedGifLaunchScreen-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimatedGifLaunchScreen-Example/Pods-AnimatedGifLaunchScreen-Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +69,10 @@
 			children = (
 				19225FC6214A45BA0055E0CB /* AppDelegate.swift */,
 				19225FC8214A45BA0055E0CB /* ViewController.swift */,
+				19225FDB214A69610055E0CB /* LogoAnimationView.swift */,
+				19DB2253214ADEA100EA1890 /* UIView+Constraints.swift */,
 				19225FCA214A45BA0055E0CB /* Main.storyboard */,
+				19225FD9214A48B80055E0CB /* logo.gif */,
 				19225FCD214A45BD0055E0CB /* Assets.xcassets */,
 				19225FCF214A45BD0055E0CB /* LaunchScreen.storyboard */,
 				19225FD2214A45BD0055E0CB /* Info.plist */,
@@ -150,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19225FD1214A45BD0055E0CB /* LaunchScreen.storyboard in Resources */,
+				19225FDA214A48B80055E0CB /* logo.gif in Resources */,
 				19225FCE214A45BD0055E0CB /* Assets.xcassets in Resources */,
 				19225FCC214A45BA0055E0CB /* Main.storyboard in Resources */,
 			);
@@ -218,6 +228,8 @@
 			files = (
 				19225FC9214A45BA0055E0CB /* ViewController.swift in Sources */,
 				19225FC7214A45BA0055E0CB /* AppDelegate.swift in Sources */,
+				19225FDC214A69610055E0CB /* LogoAnimationView.swift in Sources */,
+				19DB2254214ADEA100EA1890 /* UIView+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +377,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSG7U2M54S;
 				INFOPLIST_FILE = "AnimatedGifLaunchScreen-Example/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ba.amerhukic.AnimatedGifLaunchScreen-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -381,7 +397,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSG7U2M54S;
 				INFOPLIST_FILE = "AnimatedGifLaunchScreen-Example/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ba.amerhukic.AnimatedGifLaunchScreen-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
