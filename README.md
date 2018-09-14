@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://www.amerhukic.com/assets/2018-09-13/logo.gif" width="484" max-width="80%" alt="Animated launch screen" />
+    <img src="https://www.amerhukic.com/assets/2018-09-13/animating-launch-screen.gif" width="280" max-width="80%" alt="Animated launch screen" />
 </p>
 
 <p align="center">
