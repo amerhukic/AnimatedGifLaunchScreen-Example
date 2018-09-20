@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/Swift-4.1-orange.svg" />
+    <img src="https://img.shields.io/badge/Swift-4.2-orange.svg" />
     <a href="https://twitter.com/hukicamer">
         <img src="https://img.shields.io/badge/contact-%40hukicamer-blue.svg?style=flat" alt="Twitter: @hukicamer" />
     </a>
