@@ -11,7 +11,12 @@ import SwiftyGif
 
 class LogoAnimationView: UIView {
     
-    let logoGifImageView = UIImageView(gifImage: UIImage(gifName: "logo.gif"), loopCount: 1)
+    let logoGifImageView: UIImageView = {
+        guard let gifImage = try? UIImage(gifName: "logo.gif") else {
+            return UIImageView()
+        }
+        return UIImageView(gifImage: gifImage, loopCount: 1)
+    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)

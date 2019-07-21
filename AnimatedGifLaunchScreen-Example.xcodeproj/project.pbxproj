@@ -109,7 +109,6 @@
 				19225FC0214A45BA0055E0CB /* Frameworks */,
 				19225FC1214A45BA0055E0CB /* Resources */,
 				2E2E1CBB6F2016205DB3FE31 /* [CP] Embed Pods Frameworks */,
-				133FB26064EAEC022EF6C6BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,21 +168,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		133FB26064EAEC022EF6C6BA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimatedGifLaunchScreen-Example/Pods-AnimatedGifLaunchScreen-Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1ADA6F5A9F6B14C13AF43C44 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,7 +192,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AnimatedGifLaunchScreen-Example/Pods-AnimatedGifLaunchScreen-Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AnimatedGifLaunchScreen-Example/Pods-AnimatedGifLaunchScreen-Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -217,7 +201,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimatedGifLaunchScreen-Example/Pods-AnimatedGifLaunchScreen-Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimatedGifLaunchScreen-Example/Pods-AnimatedGifLaunchScreen-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
